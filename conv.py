@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#Comparing Spectra with the Spectral Convolution
 
 with open('data/rosalind_conv.txt', 'r') as f:
     S1 = [float(i) for i in f.readline().rstrip('\n').split()]

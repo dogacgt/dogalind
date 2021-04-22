@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#Inferring Protein from Spectrum
 
 with open('table.txt', 'r') as f:
     dict = {}
