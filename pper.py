@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-
-
+#Partial Permutations
 
 def main():
     result = 1

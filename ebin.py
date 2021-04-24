@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#Wright-Fisher's Expected Behavior
 
 with open('data/rosalind_ebin.txt') as f:
     n, *P = [float(i) for i in f.read().strip().split()]
