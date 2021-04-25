@@ -2,8 +2,8 @@
 #Comparing Spectra with the Spectral Convolution
 
 with open('data/rosalind_conv.txt', 'r') as f:
-    S1 = [float(i) for i in f.readline().rstrip('\n').split()]
-    S2 = [float(i) for i in f.readline().rstrip('\n').split()]
+    S1 = [float(i) for i in f.readline().strip().split()]
+    S2 = [float(i) for i in f.readline().strip().split()]
 
 
 subs = []
