@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 #Counting Subsets
 
 with open('data/rosalind_sset.txt', 'r') as f:
