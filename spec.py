@@ -1,24 +1,26 @@
 #!/usr/bin/env python
 #Inferring Protein from Spectrum
 
-with open('table.txt', 'r') as f:
-    dict = {}
+with open('data/mass_table.txt', 'r') as f:
+    mass = {}
     for line in f.readlines():
         a, b = line.strip().split()[::-1]
-        key = '%.4f'%float(a)
-        dict[key] = b
+        key = '%.4f' % float(a)
+        mass[key] = b
 
 with open('data/rosalind_spec.txt', 'r') as f:
-    input = f.read().strip().split()
+    inp = f.read().strip().split()
 
-diff = []
-i=len(input)-1
+diffs = []
+i=len(inp)-1
 while i > 0:
-    mass = float(input[i]) - float(input[i-1])
-    diff.append('%.4f' % mass)
+    diff = float(inp[i]) - float(inp[i-1])
+    diffs.append('%.4f' % diff)
     i -= 1
 
-pro = ''
-for mass in diff:
-     pro += dict[mass]
-print(pro[::-1])
+protein = ''
+for diff in diffs:
+    protein += mass[diff]
+
+with open('output.txt', 'w') as f:
+    f.write(protein[::-1])
