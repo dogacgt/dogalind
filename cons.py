@@ -1,17 +1,11 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 #Consensus and Profile
 
-with open('data/rosalind_cons.txt', 'r') as f:
-    f = f.readlines()
-    dna = ''
-    seqs = []
-    for line in f:
-        if line.startswith('>'):
-            if dna != '':
-                seqs.append(dna)
-            dna = ''
-        else: dna += line.strip()
-    seqs.append(dna)
+from Bio import SeqIO
+
+seqs=[]
+for record in SeqIO.parse('data/rosalind_cons.txt', 'fasta'):
+    seqs.append(str(record.seq))
 
 def profile(seqs, letter):
     length = len(seqs[0])
@@ -38,8 +32,8 @@ def consensus():
     return cons
 
 with open('output.txt', 'w') as f:
-    f.write(consensus() + '\n')
-    f.write('A: ' + ' '.join(map(str, A)) + '\n')
-    f.write('C: ' + ' '.join(map(str, C)) + '\n')
-    f.write('G: ' + ' '.join(map(str, G)) + '\n')
-    f.write('T: ' + ' '.join(map(str, T)))
+    f.write('{}\n'.format(consensus()))
+    f.write('A: {}\n'.format(' '.join(map(str, A))))
+    f.write('C: {}\n'.format(' '.join(map(str, C))))
+    f.write('G: {}\n'.format(' '.join(map(str, G))))
+    f.write('T: {}'.format(' '.join(map(str, T))))
