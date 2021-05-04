@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #Finding a Motif in DNA
 
 eval $(awk '{ print "d"NR"="$1 }' data/rosalind_subs.txt)

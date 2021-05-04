@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 #Counting Phylogenetic Ancestors
 
 with open('data/rosalind_inod.txt', 'r') as f:

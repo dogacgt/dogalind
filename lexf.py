@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 #Enumerating k-mers Lexicographically
 
 from itertools import product

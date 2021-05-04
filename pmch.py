@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 #Perfect Matchings and RNA Secondary Structures
 
 from math import factorial

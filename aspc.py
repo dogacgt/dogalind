@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 #Introduction to Alternative Splicing
 
 from math import factorial as fact

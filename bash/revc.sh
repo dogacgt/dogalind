@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #Complementing a Strand of DNA
 
 rev_comp=""

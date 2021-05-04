@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #Error Correction in Reads
 
 from Bio import SeqIO

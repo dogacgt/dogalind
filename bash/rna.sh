@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #Transcribing DNA into RNA
 
 rna=""

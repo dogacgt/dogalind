@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 #Open Reading Frames
 
 codons = {"UUU":"F", "UUC":"F", "UUA":"L", "UUG":"L",

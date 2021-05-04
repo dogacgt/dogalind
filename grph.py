@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 #Overlap Graphs
 
 # value[:3] prefix

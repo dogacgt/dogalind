@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 #Maximum Matchings and RNA Secondary Structures
 
 from math import factorial

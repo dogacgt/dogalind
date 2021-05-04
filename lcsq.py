@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #Finding a Shared Spliced Motif
 
 import numpy as np

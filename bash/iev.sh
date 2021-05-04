@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #Calculating Expected Offspring
 
 vec=($(cat data/rosalind_iev.txt))

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #Counting Point Mutations
 
 eval $(awk '{ print "d"NR"="$1 }' data/rosalind_hamm.txt)

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #Counting Unrooted Binary Trees
 
 with open('data/rosalind_cunr.txt') as f:

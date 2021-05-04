@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #Genome Assembly as Shortest Superstring
 
 from Bio import SeqIO

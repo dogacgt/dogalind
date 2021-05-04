@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #Transitions and Transversions
 
 from Bio import SeqIO

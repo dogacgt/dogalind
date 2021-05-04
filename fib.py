@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 #Rabbits and Recurrence Relations
 
 with open('data/rosalind_fib.txt', 'r') as f:
