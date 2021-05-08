@@ -2,7 +2,7 @@
 #Complementing a Strand of DNA
 
 rev_comp=""
-while read -n1 code
+while read -r -n1 code
 do
 	case $code in
 		A)	code="T"	;;
